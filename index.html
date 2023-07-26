@@ -46,10 +46,10 @@
     font-family: 'Lato', sans-serif;
    }
 
-   .carousel-opacity{
-    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
-
+   #check:checked~ul{
+    display: block;
    }
+
   </style>
 </head>
 
@@ -57,42 +57,71 @@
    <!-- header section start here -->
    <header>
     <!-- navbar section -->
-    <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-5">
-     <div class="lg:bg-primary-color md:bg-white rounded-full md:text-black lg:text-white py-3 px-4 flex flex-col md:flex-col lg:flex-row justify-between items-center gap-4">
-      <!-- nav items -->
-      <div>
-        <ul class="flex items-center gap-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">All Fruits</a></li>
-        </ul>
+    <section class="hidden lg:block">
+      <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-5">
+        <div class="lg:bg-primary-color md:bg-white rounded-full md:text-black lg:text-white py-3 px-4 flex flex-col md:flex-col lg:flex-row justify-between items-center gap-4">
+         <!-- nav items -->
+         <div>
+           <ul class="flex items-center gap-5">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Shop</a></li>
+             <li><a href="#">All Fruits</a></li>
+           </ul>
+         </div>
+   
+         <!-- nav logo -->
+   
+         <div class="flex items-center cursor-pointer gap-2">
+           <img src="./images/logo.png" class="w-[44.517px]" alt="">
+           <h4 class="text-2xl font-extrabold">Fruit Burst</h4>
+         </div>
+   
+         <!-- search button -->
+   
+         <div class="flex relative">
+           <input type="text" placeholder="Search here" class="input text-black rounded-full input-bordered  w-full max-w-xs"/>
+          <img src="./images/search.svg" class="absolute right-2 top-3 cursor-pointer" alt="">
+         </div>
+        </div>
+       </nav>
+    </section>
+
+   <!-- phone -->
+    <section class="block lg:hidden">
+      <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-5">
+       <nav class=" h-20 w-full">
+         <input type="checkbox" id="check" hidden>
+         <label for="check" class="float-right text-3xl lg:hidden">
+          <i class="fa-solid fa-bars mt-2"></i>
+         </label>
+         
+         <div class="flex items-center gap-3">
+          <label><img src="./images/logo.png" class="w-[40px]" alt=""></label>
+          <label class="text-3xl font-extrabold">Fruit Burst</label>
+         </div>
+
+          <ul class="float-right mr-10 lg:flex lending-[80px] md:lending[80px] space-x-5 rounded lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 mt-5 lg:mt-0 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-right hidden ">
+
+            <a href="#" class="hover:text-primary-color "><li>Home</li></a>
+            <a href="#" class="hover:text-primary-color"><li>About Us</li></a>
+            <a href="#" class="hover:text-primary-color"><li>Shop</li></a>
+            <a href="#" class="hover:text-primary-color"><li>All Fruits</li></a>
+            <a href="#"><input type="text" placeholder="Search here" class="input input-bordered input-xs mt-5 w-[40%]" /></a>
+           </ul>
+       </nav>
       </div>
-
-      <!-- nav logo -->
-
-      <div class="flex items-center cursor-pointer gap-2">
-        <img src="./images/logo.png" class="w-[44.517px]" alt="">
-        <h4 class="text-2xl font-extrabold">Fruit Burst</h4>
-      </div>
-
-      <!-- search button -->
-
-      <div class="flex relative">
-        <input type="text" placeholder="Search here" class="input text-black rounded-full input-bordered  w-full max-w-xs"/>
-       <img src="./images/search.svg" class="absolute right-2 top-3 cursor-pointer" alt="">
-      </div>
-     </div>
-    </nav>
+    </section>
+    <!-- phone -->
     <!-- navbar section -->
 
     <!-- banner section -->
-    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 relative">
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-0 lg:my-10 relative">
 
       <div class="carousel w-full rounded-lg">
 
         <!--slider one  -->
-        <div id="slide1" class="carousel-item relative w-full bg-banner-bg-1 bg-no-repeat bg-cover min-h-screen">
+        <div id="slide1" class="carousel-item relative w-full bg-banner-bg-1 bg-no-repeat bg-cover bg-zinc-400 bg-blend-multiply min-h-screen">
 
        <div class="flex justify-center items-center m-auto text-white">
 
@@ -110,7 +139,7 @@
         </div>
    
         <!-- slider two -->
-        <div id="slide2" class="carousel-item relative w-full bg-banner-bg-2 bg-no-repeat bg-cover min-h-screen">
+        <div id="slide2" class="carousel-item relative w-full bg-banner-bg-2 bg-zinc-400 bg-blend-multiply bg-no-repeat bg-cover min-h-screen">
 
           <div class="flex justify-center items-center m-auto text-white">
 
@@ -128,7 +157,7 @@
         </div> 
 
           <!-- slider three -->
-        <div id="slide3" class="carousel-item relative w-full bg-banner-bg-3 bg-no-repeat bg-cover min-h-screen">
+        <div id="slide3" class="carousel-item relative w-full bg-banner-bg-3 bg-zinc-400 bg-blend-multiply bg-no-repeat bg-cover min-h-screen">
             
           <div class="flex justify-center items-center m-auto text-white">
 
@@ -146,7 +175,7 @@
         </div> 
 
           <!-- slider four -->
-        <div id="slide4" class="carousel-item relative w-full bg-banner-bg-1 bg-no-repeat bg-cover min-h-screen">
+        <div id="slide4" class="carousel-item relative w-full bg-banner-bg-1 bg-zinc-400 bg-blend-multiply bg-no-repeat bg-cover min-h-screen">
 
           <div class="flex justify-center items-center m-auto text-white">
 
@@ -162,6 +191,8 @@
           </div>
         </div>
       </div>
+
+      <!-- fruits section -->
 
       <div class="bg-white w-[350px] md:w-[500px] lg:w-[800px] mx-auto flex justify-between rounded-lg text-center p-2 absolute -bottom-16 left-[9%] md:-bottom-24 md:left-[17%] lg:-bottom-10 lg:left-[18%] xl:-bottom-28">
         <div>
