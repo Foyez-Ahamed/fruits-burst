@@ -127,7 +127,7 @@
 
         <div class="text-center space-y-5">
           <h1 class=" text-xl lg:text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-          <p>We supply highly quality organic products</p>
+          <p>We supply organic products</p>
           <button class="btn bg-primary-color border-none text-white font-extrabold hover:text-black">Shop Now</button>
         </div>
        </div>
@@ -145,7 +145,7 @@
 
             <div class="text-center space-y-5">
               <h1 class=" text-xl lg:text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-              <p>We supply highly quality organic products</p>
+              <p>We supply organic products</p>
               <button class="btn bg-primary-color border-none text-white font-extrabold hover:text-black">Shop Now</button>
             </div>
            </div>
@@ -163,7 +163,7 @@
 
             <div class="text-center space-y-5">
               <h1 class=" text-xl lg:text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-              <p>We supply highly quality organic products</p>
+              <p>We supply organic products</p>
               <button class="btn bg-primary-color border-none text-white font-extrabold hover:text-black">Shop Now</button>
             </div>
            </div>
@@ -181,7 +181,7 @@
 
             <div class="text-center space-y-5">
               <h1 class=" text-xl lg:text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-              <p>We supply highly quality organic products</p>
+              <p>We supply organic products</p>
               <button class="btn bg-primary-color border-none text-white font-extrabold hover:text-black">Shop Now</button>
             </div>
            </div>
@@ -194,7 +194,7 @@
 
       <!-- fruits section -->
 
-      <div class="bg-white w-[350px] md:w-[500px] lg:w-[800px] mx-auto flex justify-between rounded-lg text-center p-2 absolute -bottom-16 left-[9%] md:-bottom-24 md:left-[17%] lg:-bottom-10 lg:left-[18%] xl:-bottom-28">
+      <div class="bg-white w-[350px] md:w-[500px] lg:w-[800px] mx-auto flex justify-between rounded-lg text-center p-2 absolute -bottom-16 left-[9%] md:-bottom-24 md:left-[17%] lg:-bottom-10 lg:left-[17.5%] xl:-bottom-28">
         <div>
          <img src="./images/fruit1.png" alt="">
          <p>Graphs</p>
@@ -298,7 +298,36 @@
                 <p class="text-gray-500 mt-3">Apples</p>
                  <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
                 <div class="card-actions">
-                  <a href="#" class="text-primary-color mt-3">Details</a>
+
+                  <div class="text-center">
+                    <!-- modal -->
+                 <button class="text-primary-color mt-3" onclick="my_modal_1.showModal()">Details</button>
+                 <dialog id="my_modal_1" class="modal">
+                 <form method="dialog" class="modal-box">
+ 
+                 <div class="text-center">
+                   <div class="card">
+                     <figure class="px-5 pt-5">
+                       <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                     </figure>
+                     <div class="card-body items-center text-center">
+                       <h2 class="card-title border-b border-gray-300 p-3 text-xl font-extrabold">12.90$ - 18.85$</h2>
+                       <p class="text-gray-500 mt-3">Apples</p>
+                        <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn">Close</button>
+                 <button class="btn bg-primary-color text-white hover:text-black">Buy now</button>
+                 </div>
+                </form>
+                </dialog>
+          <!-- modal -->
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -315,7 +344,38 @@
                 <p class="text-gray-500 mt-3">Orange</p>
                  <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
                 <div class="card-actions">
-                  <a href="#" class="text-primary-color mt-3">Details</a>
+
+
+                  <div class="text-center">
+                    <!-- modal -->
+                 <button class="text-primary-color mt-3" onclick="my_modal_2.showModal()">Details</button>
+                 <dialog id="my_modal_2" class="modal">
+                 <form method="dialog" class="modal-box">
+ 
+                 <div class="text-center">
+                   <div class="card">
+                     <figure class="px-5 pt-5">
+                       <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                     </figure>
+                     <div class="card-body items-center text-center">
+                       <h2 class="card-title border-b border-gray-300 p-3 text-xl font-extrabold">12.90$ - 18.85$</h2>
+                       <p class="text-gray-500 mt-3">Orange</p>
+                        <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn">Close</button>
+                 <button class="btn bg-primary-color text-white hover:text-black">Buy now</button>
+                 </div>
+                </form>
+                </dialog>
+          <!-- modal -->
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -332,7 +392,36 @@
                 <p class="text-gray-500 mt-3">Red Dragon</p>
                  <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
                 <div class="card-actions">
-                  <a href="#" class="text-primary-color mt-3">Details</a>
+
+                  <div class="text-center">
+                    <!-- modal -->
+                 <button class="text-primary-color mt-3" onclick="my_modal_3.showModal()">Details</button>
+                 <dialog id="my_modal_3" class="modal">
+                 <form method="dialog" class="modal-box">
+ 
+                 <div class="text-center">
+                   <div class="card">
+                     <figure class="px-5 pt-5">
+                       <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                     </figure>
+                     <div class="card-body items-center text-center">
+                       <h2 class="card-title border-b border-gray-300 p-3 text-xl font-extrabold">12.90$ - 18.85$</h2>
+                       <p class="text-gray-500 mt-3">Red Dragons</p>
+                        <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn">Close</button>
+                 <button class="btn bg-primary-color text-white hover:text-black">Buy now</button>
+                 </div>
+                </form>
+                </dialog>
+          <!-- modal -->
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -349,7 +438,36 @@
                 <p class="text-gray-500 mt-3">Banana</p>
                  <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
                 <div class="card-actions">
-                  <a href="#" class="text-primary-color mt-3">Details</a>
+
+                  <div class="text-center">
+                    <!-- modal -->
+                 <button class="text-primary-color mt-3" onclick="my_modal_4.showModal()">Details</button>
+                 <dialog id="my_modal_4" class="modal">
+                 <form method="dialog" class="modal-box">
+ 
+                 <div class="text-center">
+                   <div class="card">
+                     <figure class="px-5 pt-5">
+                       <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                     </figure>
+                     <div class="card-body items-center text-center">
+                       <h2 class="card-title border-b border-gray-300 p-3 text-xl font-extrabold">12.90$ - 18.85$</h2>
+                       <p class="text-gray-500 mt-3">Banana</p>
+                        <a href="#" class="mt-3"><img src="./images/rating.svg" alt=""></a>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 <div class="modal-action">
+                <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn">Close</button>
+                 <button class="btn bg-primary-color text-white hover:text-black">Buy now</button>
+                 </div>
+                </form>
+                </dialog>
+          <!-- modal -->
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -360,7 +478,7 @@
 
       <!-- button -->
        <div class="text-center mt-10">
-        <button class="btn bg-primary-color text-white font-extrabold capitalize px-5">Shop All</button>
+        <button class="btn bg-primary-color text-white font-extrabold capitalize px-5 hover:text-black">Shop All</button>
        </div>
        <!-- button -->
       <!-- deal of card section -->
